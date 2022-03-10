@@ -2,21 +2,21 @@
 
 import Darwin
 
-addNumbers(10, 12)
-addNumbers(99.8, 100.2)
+additionNumbers(10, 12)
+additionNumbers(99.8, 100.2)
 
-subNumbers(100, 50)
-subNumbers(200.5, 100)
+subtractNumbers(100, 50)
+subtractNumbers(200.5, 100)
 
-divNumbers(20, 4)
-divNumbers(12.8, 2.0)
+divideNumbers(20, 4)
+divideNumbers(12.8, 2.0)
 
-mulNumbers(2, 8)
-mulNumbers(20.0, 5.1)
+multiplyNumbers(2, 8)
+multiplyNumbers(20.0, 5.1)
 
 sumDigits(1234)
 
-compStrings("Hello", "!")
+comparisonStrings("Hello", "!")
 
 exponentiation(-2, 5)
 
@@ -24,41 +24,41 @@ print("Factorial = \(factorial(-1))")
 
 // Addition Functions
 
-func addNumbers(_ firstNumber: Int, _ secondNumber: Int) {
+func additionNumbers(_ firstNumber: Int, _ secondNumber: Int) {
     print("intNumberAddition = \(firstNumber + secondNumber)\n")
 }
 
-func addNumbers(_ firstNumber: Double, _ secondNumber: Double) {
+func additionNumbers(_ firstNumber: Double, _ secondNumber: Double) {
     print("doubleNumberAddition = \(firstNumber + secondNumber)\n")
 }
 
 // Subtraction Functions
 
-func subNumbers(_ firstNumber: Int, _ secondNumber: Int) {
+func subtractNumbers(_ firstNumber: Int, _ secondNumber: Int) {
     print("intNumberSubtraction = \(firstNumber - secondNumber)\n")
 }
 
-func subNumbers(_ firstNumber: Double, _ secondNumber: Double) {
+func subtractNumbers(_ firstNumber: Double, _ secondNumber: Double) {
     print("doubleNumberSubtraction = \(firstNumber - secondNumber)\n")
 }
 
 // Multiplication Functions
 
-func mulNumbers(_ firstNumber: Int, _ secondNumber: Int) {
+func multiplyNumbers(_ firstNumber: Int, _ secondNumber: Int) {
     print("intNumberMultiplication = \(firstNumber * secondNumber)\n")
 }
 
-func mulNumbers(_ firstNumber: Double, _ secondNumber: Double) {
+func multiplyNumbers(_ firstNumber: Double, _ secondNumber: Double) {
     print("doubleNumberMultiplication = \(firstNumber * secondNumber)\n")
 }
 
 // Division Functions
 
-func divNumbers(_ firstNumber: Int, _ secondNumber: Int) {
+func divideNumbers(_ firstNumber: Int, _ secondNumber: Int) {
     print("intNumberDivision = \(firstNumber / secondNumber)\n")
 }
 
-func divNumbers(_ firstNumber: Double, _ secondNumber: Double) {
+func divideNumbers(_ firstNumber: Double, _ secondNumber: Double) {
     print("doubleNumberDivision = \(firstNumber / secondNumber)\n")
 }
 
@@ -77,7 +77,7 @@ func sumDigits(_ number: Int) {
 
 // String comparison
 
-func compStrings(_ firstString: String, _ secondString: String) {
+func comparisonStrings(_ firstString: String, _ secondString: String) {
     firstString == secondString ? print("String are the same!\n") : print("Strings are different!\n")
 }
 
