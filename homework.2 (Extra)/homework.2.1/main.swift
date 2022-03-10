@@ -39,12 +39,14 @@ else {
 
 // Task 4
 
+var yearsOld = 17
 var yearsOldRange = 16..<18
 
-yearsOldRange.upperBound > 18 ? print("You are allowed to drink") : print("Drink juice")
-
-if !(yearsOldRange.contains(18)) {
+if (yearsOldRange.contains(yearsOld)) {
     print("Think about a way how you can look like an adult")
+}
+else {
+    yearsOld >= 18 ? print("You are allowed to drink") : print("Drink juice")
 }
 
 // Task 5
