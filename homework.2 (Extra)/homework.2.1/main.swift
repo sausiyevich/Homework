@@ -42,7 +42,7 @@ else {
 var yearsOld = 17
 var yearsOldRange = 16..<18
 
-if (yearsOldRange.contains(yearsOld)) {
+if yearsOldRange.contains(yearsOld) {
     print("Think about a way how you can look like an adult")
 }
 else {
