@@ -7,11 +7,11 @@ var tupleArray = [(100, "Continue"), (202, "Accepted"), (203, "Non-Authoritative
 
 // Task 1
 
-func squaringIntegerElement(_ : [(Int, String)]) -> [Int] {
+func squareIntegerElement(array : [(Int, String)]) -> [Int] {
     var newTupleArray: [Int] = []
     
-    for index in 0..<tupleArray.count {
-        newTupleArray.append(Int(pow(Double(tupleArray[index].0), 2)))
+    for index in 0..<array.count {
+        newTupleArray.append(Int(pow(Double(array[index].0), 2)))
     }
     
     return newTupleArray
@@ -19,37 +19,34 @@ func squaringIntegerElement(_ : [(Int, String)]) -> [Int] {
 
 // Task 2
 
-func writingEvenElements(_ : [(Int, String)]) -> [(Int, String)] {
+func writeEvenElements(array : [(Int, String)]) -> [(Int, String)] {
     var newTupleArray: [(Int, String)] = []
 
-    for index in 0..<tupleArray.count {
-        if tupleArray[index].0 % 2 == 0 {
-            newTupleArray.append(tupleArray[index])
+    for index in array {
+        if index.0 % 2 == 0 {
+            newTupleArray.append(index)
         }
     }
-
+    
     return newTupleArray
 }
 
-func alternativeWritingEvenElements(_ : [(Int, String)]) -> [(Int, String)] {
+func alternativeWriteEvenElements(array : [(Int, String)]) -> [(Int, String)] {
     var newTupleArray: [(Int, String)] = []
 
-    newTupleArray = tupleArray.filter { $0.0 % 2 == 0 }
+    newTupleArray = array.filter { $0.0 % 2 == 0 }
 
     return newTupleArray
 }
 
 // Task 3
 
-func sortingByAscendingString(_ : [(Int, String)]) -> [(Int, String)] {
-    var newTupleArray: [(Int, String)] = []
-
-    newTupleArray = tupleArray.sorted { $0.1 < $1.1 }
-
-    return newTupleArray
+func sortByAscendingString(array : [(Int, String)]) -> [(Int, String)] {
+    array.sorted { $0.1 < $1.1 }
 }
 
-print(squaringIntegerElement(tupleArray))
-print(writingEvenElements(tupleArray))
-print(alternativeWritingEvenElements(tupleArray))
-print(sortingByAscendingString(tupleArray))
+print(squareIntegerElement(array: tupleArray))
+print(writeEvenElements(array: tupleArray))
+print(alternativeWriteEvenElements(array: tupleArray))
+print(sortByAscendingString(array: tupleArray))
+
