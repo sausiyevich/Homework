@@ -66,14 +66,13 @@ func createCharacterArray(_ optionalStringsArray: [String?]) -> [Character] {
 }
 
 func countRepeatedCharacter(_ optionalStringsArray: [String?]) {
-        let newCharacterArray = createCharacterArray(optionalStringsArray)
+    let newCharacterArray = createCharacterArray(optionalStringsArray)
+    
+    let result = newCharacterArray.reduce(into: [Character: Int]()) {
+        partialResult, element in
+        partialResult[element, default: 0] += 1
         
-        let result = newCharacterArray.reduce(into: [Character: Int]()) {
-            
-            partialResult, element in
-            partialResult[element, default: 0] += 1
-            
-        }
+    }
 
-        print(result)
+    print(result)
 }
